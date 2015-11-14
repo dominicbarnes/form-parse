@@ -1,6 +1,6 @@
 {
   "name": "form-parse",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A helper for converting the values of a form into a single object.",
   "author": "Dominic Barnes <dominic@dbarnes.info>",
   "repository": "dominicbarnes/form-parse",
