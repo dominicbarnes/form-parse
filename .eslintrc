@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "@dominicbarnes",
+    "@dominicbarnes/browser",
+    "@dominicbarnes/mako"
+  ],
+  "rules": {
+    "no-else-return": 0
+  }
+}

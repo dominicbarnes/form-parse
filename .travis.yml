@@ -1,0 +1,20 @@
+sudo: false
+language: node_js
+node_js:
+- stable
+install: npm update
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: dominic@dbarnes.info
+  api_key:
+    secure: mtphw/nDrKI7pLHBM8SPt/aVX1SqRGrILlZ8gtSOPXMX5+FAzOEe2QsBBmiPa2lqdgrowMCBHxKP591U2xjs3xF/djXMSOjWmhh/dLiGqO8hj6NqWnihU0GTq8bljwcgyILMj28uy2guxPB7qssaejcW8VbLJ8oByKYhlGWTyMk=
+  on:
+    tags: true
+    repo: dominicbarnes/form-controls
+env:
+  global:
+  - secure: bDexGPH8hX+a5TF0m7A//VSmwIj2rMU7n0nt2jlpO4wlV3OVa3HybdatZC2OuUX2Dg7yjO4IPrAWh0YaUdzR1EQ14VuQkvrU4m8t6KqwDSv3fyDo52IyMksVrvnLaooy/izhLEsF+tMMpvk8JSpyybdtj9XrwvE9uhpRmaL57HA=
+  - secure: k0rclmj48rKT6ZHM78ZU3QLEUqh4INPl/JC4wrfVhcuyaMFWyLhtd62hphvLvhHI3meR/wpSRF9a42lOtKbU6xzkuLVJ2w1ZfbbU+dRxnvd4FpnVVnJwRYczv5ND7uo6xyyAaWyXBym8FKZyqWrt6cBdWPw5VZi7UQXC0EJXX7E=

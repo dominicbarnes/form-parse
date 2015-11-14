@@ -1,0 +1,28 @@
+<form id="simple">
+    <input type="text" name="username" value="dominicbarnes">
+    <input type="password" name="password" value="123456">
+</form>
+
+<form id="nested">
+    <input type="number" name="counter" value="5">
+
+    <fieldset name="user">
+        <legend>User</legend>
+
+        <input type="hidden" name="user[id]" value="abc123">
+        <input type="text" name="user[name]" value="Dominic Barnes">
+    </fieldset>
+</form>
+
+<form id="transform">
+    <input type="text" name="username" value="testuser">
+    <input type="number" name="number" value="1.23">
+    <input type="text" name="empty">
+</form>
+
+<form id="unsubmittable">
+    <input type="text" name="txt" value="should not submit" disabled>
+    <textarea>should not submit</textarea>
+    <button type="submit" name="sub" value="should not submit">Submit</button>
+    <input type="button" name="btn" value="should not submit">
+</form>

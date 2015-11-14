@@ -1,0 +1,11 @@
+ui: mocha-bdd
+html: test/fixture.html
+browsers:
+  - name: chrome
+    version: latest
+  - name: firefox
+    version: latest
+  - name: safari
+    version: latest
+  - name: ie
+    version: 8..latest
