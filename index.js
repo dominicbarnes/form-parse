@@ -3,7 +3,7 @@ var controls = require('form-controls');
 var reduce = require('reduce');
 var square = require('squares');
 var submittable = require('is-submittable');
-var value = require('component-value');
+var value = require('dom-value');
 
 
 /**
