@@ -1,11 +1,14 @@
 sudo: false
 language: node_js
 node_js:
-- stable
+  - stable
 install: npm update
+script:
+  - npm test
+  - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && npm run test-cloud || true'
 cache:
   directories:
-  - node_modules
+    - node_modules
 deploy:
   provider: npm
   email: dominic@dbarnes.info

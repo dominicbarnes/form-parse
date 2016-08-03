@@ -34,7 +34,8 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "zuul -- test",
-    "start": "zuul --local 7000 test"
+    "test": "zuul --phantom -- test/*.js",
+    "test-cloud": "zuul -- test/*.js",
+    "test-server": "zuul --local 7000 -- test/*.js"
   }
 }
